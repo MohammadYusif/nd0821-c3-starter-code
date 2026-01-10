@@ -7,6 +7,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: starter
+
     steps:
       - uses: actions/checkout@v4
 
@@ -20,10 +25,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lint
+      - name: Run flake8
         run: |
           flake8 .
 
-      - name: Tests
+      - name: Run pytest
         run: |
           pytest -q
