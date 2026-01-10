@@ -80,4 +80,4 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
    * Note: Install flake8 separately if needed: `pip install flake8`
 * Set up DVC on Heroku using the instructions contained in the starter directory.
 * Set up access to AWS on Heroku, if using the CLI: `heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy`
-* Write a script that uses the requests module to do one POST on your live API.
+* Write a script that uses the requests module to do one POST on your live API..
