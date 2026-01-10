@@ -37,7 +37,7 @@ Working in a command line environment is recommended for ease of use with git an
     * GET on the root giving a welcome message.
     * POST that does model inference.
     * Type hinting must be used.
-    * Use a Pydantic model to ingest the body from POST. This model should contain an example.
+    * Use a Pydantic model to ingest the body from POST. This model should contain an json_schema_extra.
    	 * Hint: the data has names with hyphens and Python does not allow those as variable names. Do not modify the column names in the csv and instead use the functionality of FastAPI/Pydantic/etc to deal with this.
 * Write 3 unit tests to test the API (one for the GET and two for POST, one that tests each prediction).
 
